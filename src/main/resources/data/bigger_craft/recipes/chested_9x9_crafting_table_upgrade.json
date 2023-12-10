@@ -1,0 +1,7 @@
+{
+	"type": "minecraft:smithing_transform",
+	"template": { "item": "minecraft:crafting_table" },
+	"base": { "item": "bigger_craft:chested_8x8_crafting_table" },
+	"addition": { "item": "minecraft:netherite_ingot" },
+	"result": { "item": "bigger_craft:chested_9x9_crafting_table" }
+}

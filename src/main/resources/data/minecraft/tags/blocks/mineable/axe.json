@@ -1,0 +1,28 @@
+{
+	"replace": false,
+	"values": [
+		"bigger_craft:4x4_crafting_table",
+		"bigger_craft:andesite_4x4_crafting_table",
+		"bigger_craft:blackstone_4x4_crafting_table",
+		"bigger_craft:deepslate_4x4_crafting_table",
+		"bigger_craft:diorite_4x4_crafting_table",
+		"bigger_craft:granite_4x4_crafting_table",
+		"bigger_craft:5x5_crafting_table",
+		"bigger_craft:6x6_crafting_table",
+		"bigger_craft:7x7_crafting_table",
+		"bigger_craft:8x8_crafting_table",
+		"bigger_craft:9x9_crafting_table",
+		"bigger_craft:chested_crafting_table",
+		"bigger_craft:chested_4x4_crafting_table",
+		"bigger_craft:andesite_chested_4x4_crafting_table",
+		"bigger_craft:blackstone_chested_4x4_crafting_table",
+		"bigger_craft:deepslate_chested_4x4_crafting_table",
+		"bigger_craft:diorite_chested_4x4_crafting_table",
+		"bigger_craft:granite_chested_4x4_crafting_table",
+		"bigger_craft:chested_5x5_crafting_table",
+		"bigger_craft:chested_6x6_crafting_table",
+		"bigger_craft:chested_7x7_crafting_table",
+		"bigger_craft:chested_8x8_crafting_table",
+		"bigger_craft:chested_9x9_crafting_table"
+	]
+}

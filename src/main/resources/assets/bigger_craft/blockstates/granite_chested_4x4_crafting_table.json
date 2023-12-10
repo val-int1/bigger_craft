@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north" : { "model": "bigger_craft:block/chested_north/granite_4x4" },
+		"facing=south" : { "model": "bigger_craft:block/chested_south/granite_4x4" },
+		"facing=east"  : { "model": "bigger_craft:block/chested_east/granite_4x4"  },
+		"facing=west"  : { "model": "bigger_craft:block/chested_west/granite_4x4"  }
+	}
+}

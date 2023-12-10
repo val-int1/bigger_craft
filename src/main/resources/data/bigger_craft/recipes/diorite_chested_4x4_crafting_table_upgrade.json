@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "bigger_craft:crafting_tables",
+	"key": {
+		"#": { "item": "minecraft:diorite" },
+		"T": { "item": "minecraft:crafting_table" },
+		"X": { "item": "bigger_craft:chested_crafting_table" }
+	},
+	"pattern": [
+		"#T#",
+		"TXT",
+		"#T#"
+	],
+	"result": { "item": "bigger_craft:diorite_chested_4x4_crafting_table" }
+}

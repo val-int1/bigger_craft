@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"bigger_craft:4x4_crafting_table",
+		"bigger_craft:andesite_4x4_crafting_table",
+		"bigger_craft:blackstone_4x4_crafting_table",
+		"bigger_craft:deepslate_4x4_crafting_table",
+		"bigger_craft:diorite_4x4_crafting_table",
+		"bigger_craft:granite_4x4_crafting_table"
+	]
+}

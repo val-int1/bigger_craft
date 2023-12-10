@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north" : { "model": "bigger_craft:block/chested_north/4x4" },
+		"facing=south" : { "model": "bigger_craft:block/chested_south/4x4" },
+		"facing=east"  : { "model": "bigger_craft:block/chested_east/4x4"  },
+		"facing=west"  : { "model": "bigger_craft:block/chested_west/4x4"  }
+	}
+}

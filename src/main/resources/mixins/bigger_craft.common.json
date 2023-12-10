@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "val_int1.bigger_craft.mixins.common",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ShapedRecipeMixin",
+		"ShapelessRecipe_SerializerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
