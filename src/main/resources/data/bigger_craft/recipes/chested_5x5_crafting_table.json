@@ -3,7 +3,7 @@
 	"category": "bigger_craft:crafting_tables",
 	"ingredients": [
 		{ "item": "bigger_craft:5x5_crafting_table" },
-		{ "tag": "c:storages" }
+		{ "tag": "c:containers" }
 	],
 	"result": { "item": "bigger_craft:chested_5x5_crafting_table" }
 }
