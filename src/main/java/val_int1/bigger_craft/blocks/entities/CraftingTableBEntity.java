@@ -30,7 +30,7 @@ public class CraftingTableBEntity extends BlockEntity {
 		super.writeNbt(nbt);
 		nbt.putInt("gridWidth", this.gridWidth);
 		nbt.putInt("gridHeight", this.gridHeight);
-		Inventories.writeNbt(nbt, this.inventory.stacks);
+		Inventories.writeNbt(nbt, this.inventory.heldStacks);
 	}
 	
 	@Override
@@ -39,7 +39,7 @@ public class CraftingTableBEntity extends BlockEntity {
 		this.gridWidth = nbt.getInt("gridWidth");
 		this.gridHeight = nbt.getInt("gridHeight");
 		this.inventory = new SimpleInventory(this.gridWidth * this.gridHeight);
-		Inventories.readNbt(nbt, this.inventory.stacks);
+		Inventories.readNbt(nbt, this.inventory.heldStacks);
 	}
 	
 	public ItemStack getItem(int i) {

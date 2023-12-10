@@ -4,7 +4,7 @@
 	"package": "val_int1.bigger_craft.mixins.common",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ShapedRecipeMixin",
+		"RawShapedRecipe_DataMixin",
 		"ShapelessRecipe_SerializerMixin"
 	],
 	"injectors": {
