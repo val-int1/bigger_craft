@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "bigger_craft:crafting_tables",
+	"key": {
+		"#": { "item": "minecraft:diamond" },
+		"T": { "item": "minecraft:crafting_table" },
+		"X": { "item": "bigger_craft:7x7_crafting_table" }
+	},
+	"pattern": [
+		"#T#",
+		"TXT",
+		"#T#"
+	],
+	"result": { "item": "bigger_craft:8x8_crafting_table" }
+}

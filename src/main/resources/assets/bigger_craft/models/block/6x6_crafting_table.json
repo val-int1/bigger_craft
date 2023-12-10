@@ -1,0 +1,7 @@
+{
+	"parent": "bigger_craft:block/crafting_table_base",
+	"textures": {
+		"grid": "bigger_craft:block/grid/6x6",
+		"outline": "block/amethyst_block"
+	}
+}

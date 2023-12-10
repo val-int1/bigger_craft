@@ -1,0 +1,8 @@
+
+{
+	"parent": "bigger_craft:block/chested_west/base",
+	"textures": {
+		"grid": "bigger_craft:block/grid/6x6",
+		"outline": "block/amethyst_block"
+	}
+}

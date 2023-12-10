@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "bigger_craft:crafting_tables",
+	"ingredients": [
+		{ "item": "bigger_craft:diorite_4x4_crafting_table" },
+		{ "tag": "c:storages" }
+	],
+	"result": { "item": "bigger_craft:diorite_chested_4x4_crafting_table" }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "bigger_craft:block/crafting_table_base",
+	"textures": {
+		"grid": "bigger_craft:block/grid/4x4",
+		"outline": "block/cobblestone"
+	}
+}

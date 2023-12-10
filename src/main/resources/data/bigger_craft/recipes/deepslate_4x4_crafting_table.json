@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "bigger_craft:crafting_tables",
+	"key": {
+		"#": { "item": "minecraft:cobbled_deepslate" },
+		"T": { "item": "minecraft:crafting_table" }
+	},
+	"pattern": [
+		"#T#",
+		"TTT",
+		"#T#"
+	],
+	"result": { "item": "bigger_craft:deepslate_4x4_crafting_table" }
+}

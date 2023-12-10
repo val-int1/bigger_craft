@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "bigger_craft",
+	"version": "1.0",
+
+	"name": "Bigger Crafter Tabler",
+	"description": "Adds bigger crafting tables to the game",
+	"authors": [ "val_int1" ],
+	"contact": {
+		"_homepage": "https://fabricmc.net/",
+		"_sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+
+	"license": "BSD-3-Clause",
+	"icon": "assets/bigger_craft/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main":			[ "val_int1.bigger_craft.init.BCTInitCommon" ],
+		"client":		[ "val_int1.bigger_craft.init.BCTInitClient" ],
+		"bct_register": [ "val_int1.bigger_craft.init.BCTBuiltin" ]
+	},
+
+	"mixins": [
+		{ "config": "mixins/bigger_craft.common.json", "environment": "*" }
+	],
+	
+	"accessWidener": "bigger_craft.aw",
+
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"fabric": "*",
+		"minecraft": "1.20.1",
+		"java": "17"
+	}
+}

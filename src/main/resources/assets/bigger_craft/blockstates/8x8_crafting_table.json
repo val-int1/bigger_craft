@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "bigger_craft:block/8x8_crafting_table" }
+	}
+}

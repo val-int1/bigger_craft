@@ -1,0 +1,107 @@
+plugins {
+	id "io.github.juuxel.gronkify" version "1.1.0"
+	id "fabric-loom" version "1.4-SNAPSHOT"
+	id "maven-publish"
+}
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_17
+
+ext {
+	mod_ver = "1.0"
+	mc_ver = "1.20.1"
+	yarn_build = "10"
+	floader_ver = "0.15.1"
+	fapi_ver = "0.87.0+${mc_ver}"
+}
+
+archivesBaseName = "bigger_craft"
+version = "${mod_ver}+${mc_ver}"
+group = "val_int1"
+
+repositories {
+	mavenLocal()
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+		content {
+			includeGroup "maven.modrinth"
+		}
+	}
+	maven { url "https://jitpack.io" }
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/bigger_craft.aw")
+}
+
+dependencies {
+	// To change the versions see the gradle.properties file
+	minecraft "com.mojang:minecraft:${mc_ver}"
+	mappings "net.fabricmc:yarn:${mc_ver}+build.${yarn_build}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${floader_ver}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${fapi_ver}"
+
+	// Uncomment the following line to enable the deprecated Fabric API modules.
+	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
+
+	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${fapi_ver}"
+
+	// ModMenu
+	modRuntimeOnly("com.terraformersmc:modmenu:7.2.2") {
+		exclude group: "net.fabricmc.fabric-api"
+	}
+
+	// No Chat Report
+	modRuntimeOnly "maven.modrinth:no-chat-reports:Fabric-1.20.1-v2.2.2"
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
+	it.options.release = 17
+}
+
+java {
+	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+	// if it is present.
+	// If you remove this line, sources will not be generated.
+	withSourcesJar()
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.archivesBaseName}"}
+	}
+
+	exclude "**/*.xcf" // remove any GIMP file from jar
+}
+
+// configure the maven publication
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+
+	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	repositories {
+		// Add repositories to publish to here.
+		// Notice: This block does NOT have the same function as the block in the top level.
+		// The repositories here will be used for publishing your artifact, not for
+		// retrieving dependencies.
+	}
+}

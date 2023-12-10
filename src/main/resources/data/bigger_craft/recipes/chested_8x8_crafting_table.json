@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "bigger_craft:crafting_tables",
+	"ingredients": [
+		{ "item": "bigger_craft:8x8_crafting_table" },
+		{ "tag": "c:storages" }
+	],
+	"result": { "item": "bigger_craft:chested_8x8_crafting_table" }
+}

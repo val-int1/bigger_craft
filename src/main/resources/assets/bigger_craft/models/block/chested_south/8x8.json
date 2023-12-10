@@ -1,0 +1,8 @@
+
+{
+	"parent": "bigger_craft:block/chested_south/base",
+	"textures": {
+		"grid": "bigger_craft:block/grid/8x8",
+		"outline": "block/diamond_block"
+	}
+}

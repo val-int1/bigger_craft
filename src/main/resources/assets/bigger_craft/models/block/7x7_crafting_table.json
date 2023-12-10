@@ -1,0 +1,7 @@
+{
+	"parent": "bigger_craft:block/crafting_table_base",
+	"textures": {
+		"grid": "bigger_craft:block/grid/7x7",
+		"outline": "block/gold_block"
+	}
+}
